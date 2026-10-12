@@ -3,7 +3,9 @@ colang_version: "1.0"
 models:
   - type: main
     engine: openai
-    model: gpt-4o-mini
+    model: gemini-3.5-flash-lite
+    parameters:
+      base_url: https://generativelanguage.googleapis.com/v1beta/openai/
 
 instructions:
   - type: general

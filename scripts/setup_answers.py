@@ -158,7 +158,7 @@ def main(argv=None):
             "generation_model": generation_model,
         })
         if (i + 1) % 10 == 0:
-            print(f"  [{i+1}/{len(test_set)}] done ({time.time()-t_start:.0f}s elapsed)")
+            print(f"  [{i+1}/{len(test_set)}] done ({time.time()-t_start:.0f}s elapsed)", flush=True)
 
     os.makedirs(os.path.dirname(ANSWERS_PATH), exist_ok=True)
     with open(ANSWERS_PATH, "w", encoding="utf-8") as f:
